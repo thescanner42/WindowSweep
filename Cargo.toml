@@ -1,0 +1,17 @@
+[package]
+name = "window-sweep"
+version = "0.1.0"
+edition = "2024"
+
+[workspace]
+default-members = [
+    ".",
+    "window-sweep-lib"
+]
+
+[dependencies]
+window-sweep-lib = { path = "./window-sweep-lib" }
+clap = { version = "4.5", features = ["derive"] }
+regex-automata = { version = "0.4" }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"

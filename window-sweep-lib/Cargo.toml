@@ -1,0 +1,11 @@
+[package]
+name = "window-sweep-lib"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# https://github.com/orf/archive-to-parquet/issues/44
+anyreader-walker = { git = "https://github.com/orf/archive-to-parquet", rev = "563899e026e056e124bd16f50a238200bb08c64c" }
+regex-automata = { version = "0.4" }
+walkdir = "2.5.0"
+rayon = "1.11.0"
